@@ -31,10 +31,10 @@ app.use((req,res,next) => {
 });
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '0153',
-    database: 'blog'
+    host: 'us-cdbr-east-03.cleardb.com',
+    user: 'b075743dd17e7e',
+    password: '586ffa50',
+    database: 'heroku_c94fa9c949cbbff'
 });
 
 
@@ -181,4 +181,4 @@ app.post('/create', (req,res) => {
 });
 
 console.log("server start!")
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
