@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/send_url.js"></script>
+</head>
+<body>
+    <div class="post">
+        <div class="container">
+            <h1><a href="/list">記事作成</a></h1>
+            <div class="panel">
+                <form action="/create" method="POST">
+                    <p>タイトル</p>
+                    <input type="text" name="articleTitle">
+                    <p>要約</p>
+                    <input type="text" name="articleSummary">
+                    <p>内容</p>
+                    <textarea name="articleContent" cols="50" rows="5"></textarea>
+                    <p>カテゴリー</p>
+                    <input type="text" name="articleCategory" value="all or limited">
+                    <input type="submit" value="投稿">
+                    <a href="/list">一覧にもどる</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
