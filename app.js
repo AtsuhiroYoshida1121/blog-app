@@ -2,7 +2,7 @@ const express = require('express');
 const mysql = require('mysql');
 const app = express();
 const session = require('express-session');
-const bcrypt = require('bcryptjs);
+const bcrypt = require('bcryptjs');
 
 
 app.use(express.static('public'));
